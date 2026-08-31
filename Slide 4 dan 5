@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Emanate - Page 4 & 5</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .modules {
+      background-color: #14162b;
+      color: white;
+      padding: 60px 40px;
+    }
+
+    .modules-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .modules-row .item {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .modules-row .material-icons {
+      background-color: #4a4dff;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 24px;
+    }
+
+    .modules-row h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .modules-row p {
+      color: #bbbbcc;
+    }
+
+    .fast-banner {
+      background-color: #6a6ff0;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .fast-banner h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .pricing {
+      background-color: #14162b;
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .pricing h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .pricing > p {
+      color: #bbbbcc;
+      margin-bottom: 40px;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .plan-box {
+      background-color: #1c1e3a;
+      text-align: left;
+      padding: 30px;
+      border-radius: 8px;
+      width: 240px;
+    }
+
+    .plan-box h3 {
+      margin-bottom: 10px;
+    }
+
+    .plan-box .price {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .plan-box p {
+      color: #bbbbcc;
+      margin-bottom: 20px;
+    }
+
+    .plan-box button {
+      width: 100%;
+      background-color: #33355a;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="modules">
+    <div class="modules-row">
+
+      <div class="item">
+        <span class="material-icons">brightness_3</span>
+        <h3>x2 Modules</h3>
+        <p>Each module can easily be turned into a dark version by adding .dark as class.</p>
+      </div>
+
+      <div class="item">
+        <span class="material-icons">account_circle</span>
+        <h3>Onboarding Screens</h3>
+        <p>Additional pages to log in, sign up as well as forgot password are included.</p>
+      </div>
+
+      <div class="item">
+        <span class="material-icons">tune</span>
+        <h3>Unlimited Possibilities</h3>
+        <p>With a custom framework and global classes, build consistent pages with ease.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fast-banner">
+    <h2>And... fast. Really fast.</h2>
+    <p>The main focus of this template is performance, no bloat.</p>
+  </div>
+
+
+  <div class="pricing">
+    <h2>Or find the perfect paid plan for your business.</h2>
+    <p>Thousands of people rely on our service.</p>
+
+    <div class="plans">
+
+      <div class="plan-box">
+        <h3>For Professionals</h3>
+        <div class="price">$10 /mo</div>
+        <p>Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+        <button>Purchase</button>
+      </div>
+
+      <div class="plan-box">
+        <h3>For Teams</h3>
+        <div class="price">$20 /mo</div>
+        <p>Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+        <button>Purchase</button>
+      </div>
+
+      <div class="plan-box">
+        <h3>For Enterprises</h3>
+        <div class="price">$50 /mo</div>
+        <p>Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+        <button>Purchase</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
