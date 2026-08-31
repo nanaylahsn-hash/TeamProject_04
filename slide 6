@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+
+        footer {
+            border-top: 3px solid #111111;
+            background-color: #f5f6f8;
+            padding: 60px 0 30px;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            color: #1a1a2e;
+            margin-bottom: 20px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column a {
+            text-decoration: none;
+            color: #555a68;
+            font-size: 15px;
+        }
+
+        .footer-column a:hover {
+            color: #1a1a2e;
+        }
+
+        .footer-bottom {
+            margin-top: 60px;
+            text-align: right;
+            color: #9aa0ab;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Startup</h3>
+                    <ul>
+                        <li><a href="#">Getting Started</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Requirements</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Medium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                HTML Template by UI/UX Assets - &copy; 2026
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
