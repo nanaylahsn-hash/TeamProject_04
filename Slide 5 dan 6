@@ -1,112 +1,229 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<title>Pricing Section</title>
+<style>
+  :root{
+    --bg-dark: #1a1a2e;
+    --bg-white: #ffffff;
+    --card-bg: #23233d;
+    --card-border: #34345a;
+    --text-white: #ffffff;
+    --text-muted: #9d9db3;
+    --text-body: #b6b6c8;
+    --btn-bg: #3d3d5c;
+    --btn-bg-hover: #4a4a70;
+  }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-        }
+  * { box-sizing: border-box; }
 
-        footer {
-            border-top: 3px solid #111111;
-            background-color: #f5f6f8;
-            padding: 60px 0 30px;
-        }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-white);
+  }
 
-        .footer-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 40px;
-        }
+  .spacer {
+    height: 60px;
+    background: var(--bg-white);
+  }
 
-        .footer-columns {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 60px;
-        }
+  .pricing-section {
+    background: var(--bg-dark);
+    padding: 70px 24px 90px;
+    text-align: center;
+  }
 
-        .footer-column h3 {
-            font-size: 20px;
-            color: #1a1a2e;
-            margin-bottom: 20px;
-        }
+  .pricing-section h1 {
+    color: var(--text-white);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 12px;
+  }
 
-        .footer-column ul {
-            list-style: none;
-        }
+  .pricing-section .subtitle {
+    color: var(--text-muted);
+    font-size: 16px;
+    margin: 0 0 36px;
+  }
 
-        .footer-column li {
-            margin-bottom: 12px;
-        }
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
 
-        .footer-column a {
-            text-decoration: none;
-            color: #555a68;
-            font-size: 15px;
-        }
+  .toggle-label {
+    color: var(--text-white);
+    font-size: 13px;
+    font-weight: 700;
+  }
 
-        .footer-column a:hover {
-            color: #1a1a2e;
-        }
+  .switch {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    background: #4a4a6a;
+    border-radius: 999px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    transition: background 0.2s ease;
+  }
 
-        .footer-bottom {
-            margin-top: 60px;
-            text-align: right;
-            color: #9aa0ab;
-            font-size: 13px;
-        }
-    </style>
+  .switch.on {
+    background: #6c6ce0;
+  }
+
+  .switch .knob {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+  }
+
+  .switch.on .knob {
+    transform: translateX(20px);
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 28px 28px 32px;
+    width: 280px;
+    text-align: left;
+  }
+
+  .card .plan-name {
+    color: var(--text-white);
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+
+  .card .price {
+    color: var(--text-white);
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+
+  .card .price .per {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+
+  .card .desc {
+    color: var(--text-body);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 24px;
+    min-height: 70px;
+  }
+
+  .card button.purchase {
+    width: 100%;
+    background: var(--btn-bg);
+    color: var(--text-white);
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .card button.purchase:hover {
+    background: var(--btn-bg-hover);
+  }
+
+  .footer-bar {
+    height: 70px;
+    background: var(--bg-white);
+  }
+
+  .footer-dark {
+    height: 40px;
+    background: #17172a;
+  }
+
+  @media (max-width: 700px) {
+    .cards { flex-direction: column; align-items: center; }
+    .card { width: 100%; max-width: 320px; }
+  }
+</style>
 </head>
-
 <body>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>Startup</h3>
-                    <ul>
-                        <li><a href="#">Getting Started</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Design</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Requirements</a></li>
-                        <li><a href="#">License</a></li>
-                        <li><a href="#">Updates</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">In</a></li>
-                        <li><a href="#">Medium</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                HTML Template by UI/UX Assets - &copy; 2026
-            </div>
-        </div>
-    </footer>
-</body>
 
+<div class="spacer"></div>
+
+<section class="pricing-section">
+  <h1>Or find the perfect paid plan for your business.</h1>
+  <p class="subtitle">Thousands of people rely on our service.</p>
+
+  <div class="toggle-row">
+    <span class="toggle-label">Pay yearly:</span>
+    <button class="switch" id="yearlyToggle" onclick="toggleYearly()">
+      <span class="knob"></span>
+    </button>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <p class="plan-name">For Professionals</p>
+      <p class="price"><span class="amount" data-monthly="10" data-yearly="8">$10</span><span class="per">/mo</span></p>
+      <p class="desc">Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+      <button class="purchase">Purchase</button>
+    </div>
+
+    <div class="card">
+      <p class="plan-name">For Teams</p>
+      <p class="price"><span class="amount" data-monthly="20" data-yearly="16">$20</span><span class="per">/mo</span></p>
+      <p class="desc">Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+      <button class="purchase">Purchase</button>
+    </div>
+
+    <div class="card">
+      <p class="plan-name">For Enterprises</p>
+      <p class="price"><span class="amount" data-monthly="50" data-yearly="40">$50</span><span class="per">/mo</span></p>
+      <p class="desc">Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+      <button class="purchase">Purchase</button>
+    </div>
+  </div>
+</section>
+
+<div class="footer-bar"></div>
+<div class="footer-dark"></div>
+
+<script>
+  function toggleYearly() {
+    const btn = document.getElementById('yearlyToggle');
+    const isOn = btn.classList.toggle('on');
+    document.querySelectorAll('.amount').forEach(el => {
+      const price = isOn ? el.dataset.yearly : el.dataset.monthly;
+      el.textContent = '$' + price;
+    });
+  }
+</script>
+
+</body>
 </html>
